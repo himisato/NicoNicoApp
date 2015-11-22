@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NicoNicoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky.png" translatesAutoresizingMaskIntoConstraints="NO" id="KPD-UR-sxU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWl-Cg-x7p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAy-cs-PuV">
+                                        <rect key="frame" x="8" y="26" width="305" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="DIa-Nv-ynr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUN-U1-aDI">
+                                        <rect key="frame" x="321" y="26" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="13c-Kf-6Cg"/>
+                                            <constraint firstAttribute="width" constant="46" id="rJw-iO-pqh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                                        <state key="normal" title="投稿">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapSubmitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UiC-X0-h9T"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.18431372549019609" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="iAy-cs-PuV" firstAttribute="top" secondItem="XWl-Cg-x7p" secondAttribute="top" constant="26" id="9bm-8P-Yw9"/>
+                                    <constraint firstItem="iAy-cs-PuV" firstAttribute="leading" secondItem="XWl-Cg-x7p" secondAttribute="leading" constant="8" id="H6t-xk-1Yv"/>
+                                    <constraint firstAttribute="trailing" secondItem="kUN-U1-aDI" secondAttribute="trailing" constant="8" id="Hhi-ZG-bjy"/>
+                                    <constraint firstItem="kUN-U1-aDI" firstAttribute="leading" secondItem="iAy-cs-PuV" secondAttribute="trailing" constant="8" id="Jgc-qK-GWJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="kUN-U1-aDI" secondAttribute="trailing" constant="8" id="K1q-yv-Ovk"/>
+                                    <constraint firstAttribute="height" constant="64" id="QLc-1U-XJD"/>
+                                    <constraint firstItem="kUN-U1-aDI" firstAttribute="top" secondItem="XWl-Cg-x7p" secondAttribute="top" constant="26" id="dKc-OO-EOV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XWl-Cg-x7p" secondAttribute="trailing" id="5eI-YP-xKU"/>
+                            <constraint firstItem="XWl-Cg-x7p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EbZ-Ah-v2C"/>
+                            <constraint firstItem="KPD-UR-sxU" firstAttribute="top" secondItem="XWl-Cg-x7p" secondAttribute="bottom" id="Gj6-WD-4AZ"/>
+                            <constraint firstItem="KPD-UR-sxU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Mfk-JP-GBI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KPD-UR-sxU" secondAttribute="bottom" id="WLK-j9-Su2"/>
+                            <constraint firstItem="XWl-Cg-x7p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dsJ-wK-7GB"/>
+                            <constraint firstAttribute="trailing" secondItem="KPD-UR-sxU" secondAttribute="trailing" id="gRs-9o-nmc"/>
+                            <constraint firstAttribute="trailing" secondItem="XWl-Cg-x7p" secondAttribute="trailing" id="wRw-je-Ub2"/>
+                            <constraint firstItem="XWl-Cg-x7p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zBc-hQ-oPP"/>
+                            <constraint firstItem="XWl-Cg-x7p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zO3-Ji-qPF"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="commentTextField" destination="iAy-cs-PuV" id="iCa-27-ymj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301.5" y="359.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sky.png" width="375" height="667"/>
+    </resources>
+</document>
